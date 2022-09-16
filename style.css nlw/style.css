@@ -1,0 +1,137 @@
+*{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+}
+
+
+body * {
+      font-family: 'inter', sans-serif;
+      line-height: 160%;
+}
+header div{
+      width: 150px;
+      margin: auto;
+      background-image: linear-gradient(90deg, red 0%, rgb(24, 216, 33), rgb(15, 224, 214)0%, blue 100%);
+      border-radius: 50%;
+      display: flex;
+      padding: 4px;
+      transition: transform .2s;
+}
+header div:hover {
+
+      transform: scale(1.1);
+}
+header{
+      margin-top: 32px;
+    
+}
+header img {
+      width:100% ;
+      border-radius: 50%;
+}
+body{
+      background-image: url(./assets/bg.jpg);
+      background-position: top center;
+      background-size: 100% auto;
+      background-repeat: no-repeat ;
+      background-color: #121214;
+}
+
+main{
+      max-width: 580px;
+      width: 90%;
+      margin: 32px auto;
+      display: grid;
+      gap: 23px;
+      margin-top: 32px;
+}
+section{
+        color: white;
+        background-image: linear-gradient(90deg, red 0%, rgb(24, 216, 33), rgb(15, 224, 214)0%, blue 100%);
+      padding-top: 4px;
+        border-radius: 10px;
+}
+
+section div {
+      background-color: #2a2634;
+      padding: 32px;
+      padding-top: 24px;
+      border-radius: 8px;
+
+}
+section ul{
+      list-style: none;
+      display: flex;
+      gap: 16px;
+      padding: 8px;
+      margin-top: 23px;
+       }
+
+       section ul li{
+           transition: transform .3s;
+        }
+
+        section ul li:hover{
+            transform: scale(1.1);
+        }
+
+
+section h2 {
+      letter-spacing: -0.47px;
+}
+section p {
+      letter-spacing: -0.18px;
+      color:#A1A1AA;
+}
+.game-list img{
+      width: 50%;
+      border-radius: 8px;
+}
+.channel-list img{
+      width: 70px;
+      border-radius: 50%;
+      border: 1px solid #443E54;
+}
+
+header div {
+      animation: fromtop .2s 1s backwards;
+}
+
+main section{
+      animation: frombottom .7s backwards;
+}
+
+main section:nth-child(1){
+      animation-delay: .0s;
+}
+
+main section:nth-child(2){
+      animation-delay: .4s;
+}
+
+main section:nth-child(3){
+      animation-delay: .8s;
+}
+
+
+@keyframes fromtop {
+      from{
+            opacity: 0;
+            transform: translateY(-30px);
+      }
+      to{
+            opacity: 2;
+            transform: translateY(0);
+      }
+}
+@keyframes frombottom {
+      from{
+            opacity: 0;
+            transform: translatex(30px);
+      }
+      to{
+            opacity: 2;
+            transform: translatex(0);
+      }
+}
